@@ -4,6 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+/.yarn/*
+!/.yarn/releases
+!/.yarn/plugins
+!/.yarn/sdks
 
 # testing
 /coverage
@@ -13,13 +17,16 @@
 /out/
 public/sitemap.xml
 .vercel
-.env
 
 # production
 /build
 *.xml
+
 # rss feed
-/public/feed.xml 
+/public/feed.xml
+
+# search
+/public/search.json
 
 # misc
 .DS_Store
@@ -31,9 +38,11 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-.vercel
+.env*.local
+
+# Contentlayer
+.contentlayer
