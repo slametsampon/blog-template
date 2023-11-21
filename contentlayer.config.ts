@@ -181,9 +181,9 @@ export default makeSource({
    * Count the occurrences of all tags across blog posts and write to json file
    */
 
-  // onSuccess: async (importData) => {
-  //   const { allBlogs } = await importData()
-  //   createTagCount(allBlogs)
-  //   createSearchIndex(allBlogs)
-  // },
+  onSuccess: async (importData) => {
+    const { allBlogs } = await importData()
+    createTagCount(allBlogs)
+    createSearchIndex(allBlogs)
+  },
 })
